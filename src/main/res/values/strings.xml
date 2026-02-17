@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">デートスポット</string>
+
+    <string-array name="area_array">
+        <item>東部</item>
+        <item>中部</item>
+        <item>西部</item>
+    </string-array>
+
+    <string-array name="weather_array">
+        <item>晴れ</item>
+        <item>曇り</item>
+        <item>雨</item>
+    </string-array>
+
+    <string-array name="season_array">
+        <item>春</item>
+        <item>夏</item>
+        <item>秋</item>
+        <item>冬</item>
+    </string-array>
+</resources>

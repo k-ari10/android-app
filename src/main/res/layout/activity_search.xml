@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="L♡VEスポットくまちゃん先生"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FF4081"
+            android:layout_marginBottom="32dp" />
+
+        <!-- 地域 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地域を選択"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/areaGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/areaEast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="東部" />
+
+            <RadioButton android:id="@+id/areaCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中部" />
+
+            <RadioButton android:id="@+id/areaWest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西部" />
+        </RadioGroup>
+
+        <!-- 天気 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天気を選択"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+        <RadioGroup
+            android:id="@+id/weatherGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/weatherSunny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晴れ" />
+
+            <RadioButton android:id="@+id/weatherCloudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="曇り" />
+
+            <RadioButton android:id="@+id/weatherRain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雨" />
+        </RadioGroup>
+
+        <!-- 季節 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="季節を選択"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+        <RadioGroup
+            android:id="@+id/seasonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/seasonSpring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="春" />
+
+            <RadioButton android:id="@+id/seasonSummer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夏" />
+
+            <RadioButton android:id="@+id/seasonAutumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="秋" />
+
+            <RadioButton android:id="@+id/seasonWinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="冬" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="探す"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
